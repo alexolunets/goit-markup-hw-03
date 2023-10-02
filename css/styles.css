@@ -8,19 +8,36 @@ body {
   line-height: 1.4;
   background-color: #ffffff;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
 }
+
 a {
   color: #434455;
   text-decoration: none;
 }
+
 img {
   display: block;
 }
+
 p,
 h1,
 h2,
@@ -39,6 +56,7 @@ a:focus {
   color: #404bbf;
   text-decoration: underline;
 }
+
 .container {
   outline: 2px solid red;
   max-width: 1188px;
@@ -181,7 +199,15 @@ button:focus {
   width: 264px;
   gap: 8px;
 }
+.features-item {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 
+.features-title {
+  margin-bottom: 8px;
+}
 /* #endfeatures */
 
 /* team */
@@ -201,7 +227,7 @@ button:focus {
   text-transform: capitalize;
   color: #2e2f42;
   padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   text-align: center;
 }
 
@@ -212,6 +238,7 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-item-text {
@@ -219,6 +246,7 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .team-list {
@@ -230,13 +258,18 @@ button:focus {
 .team-item {
   background-color: #fff;
   text-align: center;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-
+.container-team {
+  padding: 32px 0;
+}
 /* #endteam */
 
 /* portfolio */
 .section-portfolio {
 }
+
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -263,6 +296,7 @@ button:focus {
 }
 
 .portfolio-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list {
@@ -271,11 +305,22 @@ button:focus {
   flex-wrap: wrap;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #ffffff);
+  row-gap: 48px;
 }
-
+.container-portfolio {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.portfolio-item-title {
+  margin-bottom: 8px;
+}
 /* #endportfolio */
 
 /* footer */
+.section-footer {
+  padding: 100px 0;
+}
 
 .footer {
   background-color: #2e2f42;
@@ -289,9 +334,9 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   margin-top: 101px;
-  display: flex;
+  display: inline-block;
 }
 
 .logo-footer-part {
