@@ -71,10 +71,12 @@ a:focus {
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
   align-items: center;
+  width: 1158px;
 }
 
 .header-navigatin {
@@ -105,6 +107,7 @@ a:focus {
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -134,6 +137,7 @@ a:focus {
 /* sectiontitle */
 .section-title {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .title {
@@ -143,8 +147,10 @@ a:focus {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  padding: 188 472 292 472;
   margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 
 .button {
@@ -162,6 +168,9 @@ a:focus {
 .button {
   display: block;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 button:hover,
@@ -277,7 +286,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-item-title {
@@ -318,7 +327,7 @@ button:focus {
 /* #endportfolio */
 
 /* footer */
-.section-footer {
+.container-footer {
   padding: 100px 0;
 }
 
@@ -335,7 +344,6 @@ button:focus {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  margin-top: 101px;
   display: inline-block;
 }
 
@@ -349,8 +357,6 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  margin-bottom: 100;
-  margin-right: 1020px;
 }
 
 /* endfooter */
