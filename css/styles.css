@@ -1,4 +1,5 @@
 /* --------------- */
+
 body {
   color: #434455;
   font-family: "Roboto", sans-serif;
@@ -53,6 +54,17 @@ a:focus {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigatin {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
 .logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -62,10 +74,21 @@ a:focus {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 76px;
 }
+
 .logo-part {
   color: #2e2f42;
 }
+
+.header-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
 .nav-link {
   color: #2e2f42;
   font-size: 16px;
@@ -73,14 +96,19 @@ a:focus {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.address {
+.address-list {
+  display: flex;
+  align-items: center;
   font-style: normal;
+  gap: 40px;
 }
+
 .contacts {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
+  gap: 40px;
 }
 
 /* #endheader */
@@ -89,6 +117,7 @@ a:focus {
 .section-title {
   background-color: #2e2f42;
 }
+
 .title {
   color: #fff;
   text-align: center;
@@ -97,7 +126,9 @@ a:focus {
   line-height: 1.07;
   letter-spacing: 1.12px;
   padding: 188 472 292 472;
+  margin-bottom: 48px;
 }
+
 .button {
   font-family: "Roboto", sans-serif;
   color: #fff;
@@ -109,12 +140,17 @@ a:focus {
   cursor: pointer;
   padding: 16px 32px;
   border-radius: 4px;
-  margin-top: 48px;
 }
+.button {
+  display: block;
+  margin: 0 auto;
+}
+
 button:hover,
 button:focus {
   background-color: #404bbf;
 }
+
 /* endsectiontitle */
 
 /* features */
@@ -127,19 +163,33 @@ button:focus {
   letter-spacing: 0.4px;
   width: 264px;
 }
+
 .features-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .section-features {
   width: 1128px;
   margin-left: 156px;
 }
+
+.features-list {
+  display: flex;
+  width: 264px;
+  gap: 8px;
+}
+
 /* #endfeatures */
 
 /* team */
+
+.section-team {
+  background: var(--CLOUD, #f4f4fd);
+}
+
 .team {
   background-color: #f4f4fd;
 }
@@ -147,32 +197,46 @@ button:focus {
 .team-title {
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
   padding-top: 120px;
+  padding-bottom: 72px;
+  text-align: center;
 }
+
 .team-item-title {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+
 .team-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
 }
+
+.team-list {
+  display: flex;
+  max-width: calc((100%-24px * 3) / 4);
+  gap: 24px;
+}
+
 .team-item {
   background-color: #fff;
-  width: 264px;
+  text-align: center;
 }
+
 /* #endteam */
 
 /* portfolio */
-
+.section-portfolio {
+}
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
@@ -180,7 +244,9 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
+
 .portfolio-item-title {
   color: #2e2f42;
   font-size: 20px;
@@ -188,39 +254,58 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 .portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
+
 .portfolio-item {
-  width: 360px;
 }
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--WHITE, #ffffff);
+}
+
 /* #endportfolio */
 
 /* footer */
+
 .footer {
   background-color: #2e2f42;
 }
+
 .logo-footer {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
   margin-bottom: 17px;
   margin-top: 101px;
+  display: flex;
 }
+
 .logo-footer-part {
   color: #f4f4fd;
 }
+
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  margin-bottom: 100;
+  margin-right: 1020px;
 }
+
 /* endfooter */
