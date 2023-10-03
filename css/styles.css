@@ -36,6 +36,7 @@ a {
 
 img {
   display: block;
+  width: 100%;
 }
 
 p,
@@ -203,13 +204,12 @@ button:focus {
 }
 
 .section-features {
-  width: 1128px;
+  max-width: 1158px;
   margin-left: 156px;
 }
 
 .features-list {
   display: flex;
-  width: 264px;
   gap: 24px;
 }
 
@@ -235,7 +235,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
+
   margin-bottom: 72px;
   text-align: center;
 }
@@ -312,7 +312,6 @@ button:focus {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  border: 1px solid #e7e9fc;
   background: #ffffff;
   row-gap: 48px;
 }
@@ -327,9 +326,6 @@ button:focus {
 /* #endportfolio */
 
 /* footer */
-.container-footer {
-  padding: 100px 0;
-}
 
 .footer {
   background-color: #2e2f42;
