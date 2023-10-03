@@ -62,7 +62,7 @@ a:focus {
 
 .container {
   outline: 2px solid red;
-  max-width: 1188px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -79,7 +79,6 @@ a:focus {
 .header-container {
   display: flex;
   align-items: center;
-  width: 1158px;
   padding: 0 15px;
 }
 
@@ -194,7 +193,6 @@ button:focus {
   letter-spacing: 0.4px;
   width: 264px;
   margin-bottom: 8px;
-  
 }
 
 .features-text {
@@ -207,7 +205,6 @@ button:focus {
 .section-features {
   width: 1128px;
   margin-left: 156px;
-  
 }
 
 .features-list {
@@ -217,9 +214,7 @@ button:focus {
 }
 
 .features-item {
-  width calc((100% - 3 * 24px) / 4);
-
-
+  width: calc((100% - 72px) / 4);
 }
 
 /* #endfeatures */
