@@ -194,6 +194,7 @@ button:focus {
   letter-spacing: 0.4px;
   width: 264px;
   margin-bottom: 8px;
+  width calc((100% - 3 * 24px) / 4);
 }
 
 .features-text {
@@ -206,17 +207,18 @@ button:focus {
 .section-features {
   width: 1128px;
   margin-left: 156px;
+  
 }
 
 .features-list {
   display: flex;
   width: 264px;
-  gap: 8px;
+  gap: 24px;
 }
 
 .features-item {
   display: flex;
-  width calc((100% - 3 * 24px) / 4);
+
 }
 
 /* #endfeatures */
