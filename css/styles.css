@@ -202,23 +202,18 @@ button:focus {
 .section-features {
   width: 1128px;
   margin-left: 156px;
-  gap: 24px;
 }
 
 .features-list {
   display: flex;
   width: 264px;
-  gap: 8px;
 }
+
 .features-item {
   display: flex;
   justify-content: center;
-  flex-basis: calc((100% - 72px) / 4))
 }
 
-.features-title {
-  margin-bottom: 8px;
-}
 /* #endfeatures */
 
 /* team */
@@ -350,6 +345,7 @@ button:focus {
 
 .logo-footer-part {
   color: #f4f4fd;
+  padding: 100px 0;
 }
 
 .footer-text {
