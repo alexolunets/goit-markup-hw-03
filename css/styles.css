@@ -41,7 +41,10 @@ img {
 p,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -116,6 +119,7 @@ a:focus {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding: 24px 0;
 }
 .address-list {
   display: flex;
@@ -207,13 +211,12 @@ button:focus {
 .features-list {
   display: flex;
   width: 264px;
-  gap: 24px;
+  gap: 8px;
 }
 
 .features-item {
   display: flex;
-  justify-content: center;
-  width: calc((100% - 72px) / 4);
+  width calc((100% - 3 * 24px) / 4);
 }
 
 /* #endfeatures */
